@@ -14,10 +14,10 @@ namespace PersonalManagement.Api.Models
 
         [ForeignKey("ApplicationUserId")]
         public string ApplicationUserId { get; set; }
-        public DateTime HourInputOne { get; set; }
-        public DateTime HourExitOne { get; set; }
-        public DateTime HourInputTwo { get; set; }
-        public DateTime HourExitTwo { get; set; }
+        public TimeSpan HourInputOne { get; set; } = new TimeSpan();
+        public TimeSpan HourExitOne { get; set; } = new TimeSpan();
+        public TimeSpan HourInputTwo { get; set; } = new TimeSpan();
+        public TimeSpan HourExitTwo { get; set; } = new TimeSpan();
         public int TotalHours { get; set; }
         public DateTime Date { get; set; }
         public decimal HourValue { get; set; }

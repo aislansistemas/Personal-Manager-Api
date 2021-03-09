@@ -16,6 +16,12 @@ namespace PersonalManagement.Api.Services.Token
         public static string GenerateToken(UserAccount user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
+            var token = tokenHandler.CreateToken(GetTokenDescriptor(user));
+            return tokenHandler.WriteToken(token);
+        }
+
+        private static SecurityTokenDescriptor GetTokenDescriptor(UserAccount user)
+        {
             var key = Encoding.ASCII.GetBytes(GetSecretToken());
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -29,8 +35,8 @@ namespace PersonalManagement.Api.Services.Token
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
+
+            return tokenDescriptor;
         }
 
         public static string GetSecretToken()

@@ -43,5 +43,23 @@ namespace PersonalManagement.Test
             var controlPointResults = controlPointRepository.Setup(c => c.GetAll(It.IsAny<ControlPointViewModel>())).Returns(Task.FromResult((IList<ControlPoint>)controlPointList));
             
         }
+
+        [Fact]
+        public void CalculateTotalHour()
+        {
+            var controlPoint = new ControlPoint()
+            {
+                ApplicationUserId = "530d0847-a28e-438e-8459-69fe207b4f1a",
+                HourInputOne = TimeSpan.Parse("22:20"),
+                HourInputTwo = TimeSpan.Parse("20:20"),
+                HourExitOne = TimeSpan.Parse("22:20"),
+                HourExitTwo = TimeSpan.Parse("20:20")
+            };
+
+            int totalHour = (controlPoint.HourInputOne.Hours - controlPoint.HourInputTwo.Hours)
+                + (controlPoint.HourExitOne.Hours - controlPoint.HourExitTwo.Hours);
+    
+            Assert.NotNull(totalHour);
+        }
     }
 }

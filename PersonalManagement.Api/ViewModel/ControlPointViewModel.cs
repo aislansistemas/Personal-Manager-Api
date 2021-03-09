@@ -10,10 +10,10 @@ namespace PersonalManagement.Api.ViewModel
     {
         public int Id { get; set; }
         public string ApplicationUserId { get; set; }
-        public TimeSpan HourInputOne { get; set; }
-        public TimeSpan HourExitOne { get; set; }
-        public TimeSpan HourInputTwo { get; set; }
-        public TimeSpan HourExitTwo { get; set; }
+        public string HourInputOne { get; set; }
+        public string HourExitOne { get; set; }
+        public string HourInputTwo { get; set; }
+        public string HourExitTwo { get; set; }
         public int TotalHours { get; set; }
         public DateTime Date { get; set; }
         public decimal HourValue { get; set; }

@@ -24,6 +24,7 @@ namespace PersonalManagement.Api.Repositories
             try
             {
                 controlPoint.TotalHours = CalculateTotalHour(controlPoint);
+                controlPoint.Date = DateTime.Now;
                 _context.ControlPoints.Add(controlPoint);
                 await _context.SaveChangesAsync();
             }catch(Exception)
@@ -31,13 +32,11 @@ namespace PersonalManagement.Api.Repositories
                 throw new Exception("Não foi possível realizar o cadastro!");
             }
         }
-
+        
         private int CalculateTotalHour(ControlPoint controlPoint)
         {
-            var totalHour = controlPoint.HourInputOne.Hour
-                + controlPoint.HourInputTwo.Hour 
-                + controlPoint.HourExitOne.Hour 
-                + controlPoint.HourExitTwo.Hour;
+            var totalHour = (controlPoint.HourInputOne.Hours - controlPoint.HourInputTwo.Hours)
+                + (controlPoint.HourExitOne.Hours - controlPoint.HourExitTwo.Hours);
 
             return totalHour;
         }
@@ -71,21 +70,22 @@ namespace PersonalManagement.Api.Repositories
         public async Task<IList<ControlPoint>> GetAll(ControlPointViewModel controlPointViewModel)
         {
             
-            var controlPoint = await _context.ControlPoints
+            var controlPoints = await _context.ControlPoints
                 .AsNoTrackingWithIdentityResolution()
                 .Where(
                     c => c.ApplicationUserId == controlPointViewModel.ApplicationUserId
                     && 
                     c.Date.Month == DateTime.Now.Month
                 )
+                .OrderByDescending(c => c.Id)
                 .ToListAsync();
 
-            if(controlPoint == null)
+            if(controlPoints == null)
             {
                 throw new NotFoundException("Nenhum registro encontrado!");
             }
 
-            return controlPoint;
+            return controlPoints;
           
         }
 
