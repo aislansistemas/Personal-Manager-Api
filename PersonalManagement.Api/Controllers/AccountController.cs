@@ -19,11 +19,11 @@ namespace PersonalManagement.Api.Controllers
     {
         private readonly IAccountRepository _accountRepository;
         private readonly SignInManager<UserAccount> _signInManager;
+
         public AccountController(
             IAccountRepository accountRepository,
             SignInManager<UserAccount> signManager
-        )
-        {
+        ){
             _accountRepository = accountRepository;
             _signInManager = signManager;
         }
@@ -76,6 +76,7 @@ namespace PersonalManagement.Api.Controllers
 
         [HttpGet]
         [Authorize(Roles = "Menber")]
-        public string Employee() => "Funcionário";
+        public string Employee() => "Menber";
+
     }
 }

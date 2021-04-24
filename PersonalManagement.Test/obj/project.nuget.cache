@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4USvn6pC5F7zZqXBud3Qkx1DAERIZp/bQ+TV6EUmzfSEY9YxltcnCX2iX0SyhVpW5ehNKP9yDkfL6fXOmo+STQ==",
+  "dgSpecHash": "GMtDV2zyGA/sVtenJ7tj/DFmrXWAxhq442z0Xa+NAJcpIbbBaFODDnvtcIiZXhUf2YuFMD+UBnzDMpx1LOSEMQ==",
   "success": true,
   "projectFilePath": "D:\\projetos\\c# .net\\PersonalManagement\\PersonalManagement.Test\\PersonalManagement.Test.csproj",
   "expectedPackageFiles": [
@@ -64,6 +64,7 @@
     "C:\\Users\\Aislan\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Aislan\\.nuget\\packages\\microsoft.testplatform.objectmodel\\16.7.1\\microsoft.testplatform.objectmodel.16.7.1.nupkg.sha512",
     "C:\\Users\\Aislan\\.nuget\\packages\\microsoft.testplatform.testhost\\16.7.1\\microsoft.testplatform.testhost.16.7.1.nupkg.sha512",
+    "C:\\Users\\Aislan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\Aislan\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Aislan\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Aislan\\.nuget\\packages\\moq\\4.16.1\\moq.4.16.1.nupkg.sha512",
@@ -71,6 +72,8 @@
     "C:\\Users\\Aislan\\.nuget\\packages\\mysqlconnector\\1.0.1\\mysqlconnector.1.0.1.nupkg.sha512",
     "C:\\Users\\Aislan\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Aislan\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Aislan\\.nuget\\packages\\nsubstitute\\4.2.2\\nsubstitute.4.2.2.nupkg.sha512",
+    "C:\\Users\\Aislan\\.nuget\\packages\\nsubstitute.quickfixes\\0.1.0\\nsubstitute.quickfixes.0.1.0.nupkg.sha512",
     "C:\\Users\\Aislan\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Aislan\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.0-alpha.1\\pomelo.entityframeworkcore.mysql.5.0.0-alpha.1.nupkg.sha512",
     "C:\\Users\\Aislan\\.nuget\\packages\\pomelo.entityframeworkcore.mysql.design\\1.1.2\\pomelo.entityframeworkcore.mysql.design.1.1.2.nupkg.sha512",

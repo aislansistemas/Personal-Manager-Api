@@ -157,3 +157,4 @@ D:\projetos\c# .net\PersonalManagement\PersonalManagement.Test\obj\Debug\net5.0\
 D:\projetos\c# .net\PersonalManagement\PersonalManagement.Test\obj\Debug\net5.0\ref\PersonalManagement.Test.dll
 D:\projetos\c# .net\PersonalManagement\PersonalManagement.Test\obj\Debug\net5.0\PersonalManagement.Test.pdb
 D:\projetos\c# .net\PersonalManagement\PersonalManagement.Test\obj\Debug\net5.0\PersonalManagement.Test.genruntimeconfig.cache
+D:\projetos\c# .net\PersonalManagement\PersonalManagement.Test\bin\Debug\net5.0\NSubstitute.dll

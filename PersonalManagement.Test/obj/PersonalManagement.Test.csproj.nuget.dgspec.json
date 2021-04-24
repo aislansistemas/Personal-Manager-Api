@@ -70,6 +70,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[5.0.0-alpha.1, )"
@@ -164,6 +168,14 @@
             "MoqInjectionContainer": {
               "target": "Package",
               "version": "[1.9.0, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "NSubstitute.QuickFixes": {
+              "target": "Package",
+              "version": "[0.1.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

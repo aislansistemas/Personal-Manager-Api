@@ -35,8 +35,8 @@ namespace PersonalManagement.Api.Repositories
         
         private int CalculateTotalHour(ControlPoint controlPoint)
         {
-            var totalHour = (controlPoint.HourInputOne.Hours - controlPoint.HourInputTwo.Hours)
-                + (controlPoint.HourExitOne.Hours - controlPoint.HourExitTwo.Hours);
+            var totalHour = (controlPoint.HourInputTwo.Hours - controlPoint.HourInputOne.Hours)
+                + (controlPoint.HourExitTwo.Hours - controlPoint.HourExitOne.Hours);
 
             return totalHour;
         }

@@ -25,5 +25,7 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\Aislan\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\Aislan\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets Condition=" '$(PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets)' == '' ">C:\Users\Aislan\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.10.9</PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets>
+    <PkgNSubstitute_QuickFixes Condition=" '$(PkgNSubstitute_QuickFixes)' == '' ">C:\Users\Aislan\.nuget\packages\nsubstitute.quickfixes\0.1.0</PkgNSubstitute_QuickFixes>
   </PropertyGroup>
 </Project>
